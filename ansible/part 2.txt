@@ -1,0 +1,87 @@
+1. Which of the following physical security controls provide protection against laptop theft? 
+ Cable lock
+ Laptop lock 
+
+2.Portable devices combining the capabilities of mobile phones and handheld PCs are commonly called:
+  Smartphones
+
+3.A type of portable device primarily designed for document access is known as a
+  E-reader
+
+4. Which of the following are ways of creating a wireless/cellular data network by using a mobile device
+  Hotspot 
+  Tethering
+  Bluetooth
+
+5.Which of the following is a security feature used in Bluetooth device pairing?
+  Pincode
+
+6.POP3 is used for:
+  Email retrieval
+
+7.Which of the following describe IMAP?
+  Offers improved functionality in comparison to POP3 
+  Serves the same function as POP3 
+
+8.What are the characteristic features of the secure version of IMAP?
+   Secure Sockets Layer (SSL) 
+   TCP port 993 
+   Transport Layer Security
+
+9.What are the basic settings required for configuring a POP3 connection?
+   Password
+   TcpPort 110
+   POP3 username
+   POP3 servername
+
+10. What are the basic settings required for configuring an IMAP connection?
+   TCP port
+   Password
+   IMAP username
+   IMAP servername
+
+11. Which of the following can be used as a reference during a mobile device update process?
+    PRI-The Primary Rate Interface (PRI) is a telecommunications interface standard used on an     Integrated Services Digital Network (ISDN) for carrying multiple DS0 voice and data     transmissions between the network and a user.
+
+12. A database on a mobile device containing bands, sub-bands and service provider IDs allowing     the device to establish connection with the right cell phone tower is called
+    PRL- PRL stands for Preferred Roaming List and is a database used in CDMA (think Sprint and     Verizon here) phones.
+
+13. A unique number used to identify a mobile network phone user is a
+    IMSI- International mobile Subscriber Identity is used to identify the user of a cellular     network and is a unique identification associated with all cellular networks.
+
+ 14.An authentication subsystem that enables a user to access multiple, connected system         components (such as separate hosts on a network) after a single login on only one of the         components is commonly called:
+    SSO
+
+15. Examples of mobile device synchronization methods for Apple iOS devices include: (Select all     that apply
+    ITUNES
+    ICLOUD
+
+16.  Which of the following are examples of universal connection types that enable mobile device      sunchronization
+   IEEE 802.11
+   USB-C
+   Cellular 
+   Bluetooth
+   IEEE 802.3
+
+17. Which of the following are Apple-proprietary connector types that can be used for iOS mobile     device synchronization? 
+    8-pin dock connector (a.k.a. Lightning connector) 
+    30 pin dock connector
+
+18. Which USB connector type can be used on an Android device for mobile device synchronization?
+    USB micro B
+
+19. Telnet
+    Provides username & password authentication 
+    Transmits data in an unencrypted form 
+    Enables remote login and command execution 
+
+20. The SMTP protocol is used for: 
+    Sending email messages between mail servers
+    Sending email messages from a client device 
+
+21. IMAP is used for:
+    Retrieving email messages from a mail server 
+
+
+
+   
