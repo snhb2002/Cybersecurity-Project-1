@@ -5,7 +5,7 @@ Cybersecurity Project 1
 The files in this repository were used to configure the network depicted below.
 
 
-![Netwrok_Diagram](https://github.com/Tandwill/Project_1/blob/8edce60d38a94f7d280d0502a5a696e9b5415670/diagrams/Network_Diagram_Project_1.png)
+![Netwrok_Diagram](https://github.com/snhb2002/Cybersecurity-Project-1/blob/f2e27114ed36cc4ba8bc79797a9e0551c8acebe6/diagrams/Network%20Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Filebeat.
 
