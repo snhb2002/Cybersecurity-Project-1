@@ -12,11 +12,11 @@ These files have been tested and used to generate a live ELK deployment on Azure
 ## Install ELK Servers
 [install-elk.yml](https://github.com/snhb2002/Cybersecurity-Project-1/blob/9c406f0f6d5b852a5c84c6e1208a56015725b233/ansible/install-elk.yml)
 
-[pentest.yml](https://github.com/Tandwill/Project_1/blob/540de3692dfe47396fb8884b7d57d927c15ee456/ansible/pentest.yml)
+[pentest.yml](https://github.com/snhb2002/Cybersecurity-Project-1/blob/627f88d979a07d19b76e8176478c32b46c8c57f4/ansible/pentest.yml)
   
 [filebeat-playbook.yml](https://github.com/snhb2002/Cybersecurity-Project-1/blob/09904737ba8eab3d8883d6d456ecd3b7afe37c0f/ansible/filebeat-playbook.yml)
 
-[metricbeat-playbook.yml](https://github.com/Tandwill/Project_1/blob/540de3692dfe47396fb8884b7d57d927c15ee456/ansible/metricbeat-playbook.yml)
+[metricbeat-playbook.yml](https://github.com/snhb2002/Cybersecurity-Project-1/blob/627f88d979a07d19b76e8176478c32b46c8c57f4/ansible/metric-playbook.yml)
 
 This document contains the following details:
 - Description of the Topologu
@@ -50,32 +50,33 @@ What does Metricbeat record?
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address  | Operating System |
-|----------|----------|-------------|------------------|
-| Jump Box | Gateway  | 10.0.0.10   | Linux            |
-| ELK      | Gateway  |52.161.2.113 | Linux            |
-| Web-1    | LBalancer| FTE-IP      | Linux            |
-| Web-2    | LBalancer| FTE-IP      | Linux            |
-| Web-3    | LBalancer| FTE-IP      | Linux            |
+| Name     | Function | IP Address    | Operating System |
+|----------|----------|---------------|------------------|
+| Jump Box | Gateway  | 10.0.0.4      | Linux            |
+| ELK      | Gateway  |70.115.247.120 | Linux            |
+| Web-1    | LBalancer| FTE-IP        | Linux            |
+| Web-2    | LBalancer| FTE-IP        | Linux            |
+
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Elk machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 76.185.57.111
+- 70.115.247.120
 
 Machines within the network can only be accessed by Jumpbox via SSH & Private Pre-Shared Key.
 - Which machine did you allow to access your ELK VM? Jumpbox
 
 What was its IP address?
-- 104.208.26.243 (Jumpbox Public)
+-52.165.225.245 (Jumpbox Public)
+-10.0.0.4 (Jumpbox Private
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | 76.185.57.111        |
+| Jump Box | Yes                 | 70.115.247.120       |
 |          |                     |                      |
 |          |                     |                      |
 
@@ -99,15 +100,15 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 
-![Docker-PS](https://user-images.githubusercontent.com/93887230/155858601-15be1ecd-a5ef-4814-9618-9d6f6be1aefd.png)
+![Docker-PS](https://github.com/snhb2002/Cybersecurity-Project-1/blob/ed7e939572e7889d8ae9781d9badb1a6c9dd200e/diagrams/docker%20ps.PNG)
 
 
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-- Web-1 10.0.0.8
-- Web-2 10.0.0.9
+- Web-1 10.0.0.5
+- Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
 - Webservers
@@ -123,7 +124,7 @@ SSH into the control node and follow the steps below:
 - Update the filebeat.yml file to include...
 - Run the playbook, and navigateto check that the installation worked as expected.  (Screenshot)
 
-![Kibanaserver png](https://user-images.githubusercontent.com/93887230/155858552-0ea5c292-fdd3-44e0-bf43-c5aa371a0161.png)
+![Kibanaserver png](https://github.com/snhb2002/Cybersecurity-Project-1/blob/4f6d312a4650c2e24eff8b8b306af988bb2c78b7/diagrams/updated%20kibana%20screen.PNG)
 
 : Answer the following questions to fill in the blanks:_
 - Which file is the playbook? Ansible-playbook files   
@@ -134,11 +135,11 @@ How do I specify which machine to install the ELK server on versus which to inst
 - HostName in Host configuration file
 
 Which URL do you navigate to in order to check that the ELK server is running?
-- SSH azadmin@10.0.0.8 (Web-1)
--  http://52.161.2.113:5601/app/#kibana/home
+- SSH azureuser@10.0.0.5 (Web-1)
+-  http://40.78.4.28:5601/app/#kibana/home
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-![Ansible-Playbook_NAME_OF_PLAYBOOK](https://user-images.githubusercontent.com/93887230/155858727-f18abb49-e8fc-4546-8a77-7fc8c3a7a620.png)
+![Ansible-Playbook_NAME_OF_PLAYBOOK]
 
 
 
