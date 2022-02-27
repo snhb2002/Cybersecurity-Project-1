@@ -10,7 +10,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Filebeat.
 
 ## Install ELK Servers
-[install-elk.yml](https://github.com/Tandwill/Project_1/blob/540de3692dfe47396fb8884b7d57d927c15ee456/ansible/install-elk.yml)
+[install-elk.yml](https://github.com/snhb2002/Cybersecurity-Project-1/blob/9c406f0f6d5b852a5c84c6e1208a56015725b233/ansible/install-elk.yml)
 
 [pentest.yml](https://github.com/Tandwill/Project_1/blob/540de3692dfe47396fb8884b7d57d927c15ee456/ansible/pentest.yml)
   
