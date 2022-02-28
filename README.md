@@ -2,12 +2,12 @@
 Cybersecurity Project 1
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+These files were used to configure the network below in this repository.
 
 
 ![Netwrok_Diagram](https://github.com/snhb2002/Cybersecurity-Project-1/blob/f2e27114ed36cc4ba8bc79797a9e0551c8acebe6/diagrams/Network%20Diagram.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Filebeat.
+The files below were tested and applied to make a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the file may be used to install only certain pieces of it, such as Metricbeat.
 
 ## Install ELK Servers
 [install-elk.yml](https://github.com/snhb2002/Cybersecurity-Project-1/blob/9c406f0f6d5b852a5c84c6e1208a56015725b233/ansible/install-elk.yml)
@@ -19,7 +19,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 [metricbeat-playbook.yml](https://github.com/snhb2002/Cybersecurity-Project-1/blob/627f88d979a07d19b76e8176478c32b46c8c57f4/ansible/metric-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -29,22 +29,22 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The purpose of this network is to present a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly avaiability, in addition to restricting access to the network.
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 What aspect of security do load balancers protect?
-- Load balancers protect the system from DDoS attacks by shifting traffic. 
+- The aspect of security that load balancers protect is the system from DDoS attacks by shifting traffic. 
 
 What is the advantage of a jump box?_
-The advantage of a jump box is to give secure access to such resources via SSH and Private Pre-Shared key... 
+The advantage of a jump box is to give secure access to resources via Private Pre-shared key and SSH. 
 
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
+Integrating an ELK server allows users to monitor the vulnerable VMs for changes to the system logs and data.
 What does Filebeat watch for?
-- Filebeat forwards and centralizes log data. Filebeat monitors the log files or locations that you specify collects log events and forwards them either to Elasticsearch or Logstash for indexing.
+- Filebeat centralizes and forwards log data. Filebeat monitors the locations or log files and collects log events and forwards them either to Logstash for indexing or Elasticsearch.
 
 What does Metricbeat record?
-- Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server, such as: Apache.
+- Metricbeat records the statistics and metrics that it collects and ships them to the output that you specify, such as Logstash or Elasticsearch. With Metricbeat, you can monitor your servers by collecting metrics from the system and services running on the server, such as: Apache.
 
 
 The configuration details of each machine may be found below.
@@ -62,10 +62,10 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the Elk machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+Only the Elk machine can accept connections from the Internet. Access to this machine is allowed only from the following IP addresses:
 - 70.115.247.120
 
-Machines within the network can only be accessed by Jumpbox via SSH & Private Pre-Shared Key.
+Machines within the network can be accessed only by Jumpbox via Private-Shared Key & SSH.
 - Which machine did you allow to access your ELK VM? Jumpbox
 
 What was its IP address?
@@ -139,7 +139,14 @@ Which URL do you navigate to in order to check that the ELK server is running?
 -  http://40.78.4.28:5601/app/#kibana/home
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-![Ansible-Playbook_NAME_OF_PLAYBOOK]
+![Ansible-Playbook_NAME_OF_PLAYBOOK] 
+ssh azureuser@52.165.225.245
+sudo docker container list -a
+sudo docker start (name)
+sudo docker attach (name)
+cd /etc/ansibe/
+ls
+nano metric-playbook.yml
 
 
 
