@@ -29,10 +29,10 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The purpose of this network is to present a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The purpose of the network is to present a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
-What aspect of security do load balancers protect?
+Load balancing always ensures that the application will be highly available, in addition to restricting access to the network.
+What is the aspect of security do load balancers protect?
 - The aspect of security that load balancers protect is the system from DDoS attacks by shifting traffic. 
 
 What is the advantage of a jump box?_
