@@ -31,7 +31,7 @@ This document contains the following details:
 
 The purpose of the network is to present a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing always ensures that the application will be highly available, in addition to restricting access to the network.
+Load balancing always ensures that the application will be highly available, in addition to restricting access to the network
 What is the aspect of security do load balancers protect?
 - The aspect of security that load balancers protect is the system from DDoS attacks by shifting traffic. 
 
@@ -65,7 +65,7 @@ The machines on the internal network are not exposed to the public Internet.
 Only the Elk machine can accept connections from the Internet. Access to this machine is allowed only from the following IP addresses:
 - 70.115.247.120
 
-Machines within the network can be accessed only by Jumpbox via Private-Shared Key & SSH.
+Machines within the network can be accessed only by Jumpbox via Private-Shared Key & SSH
 - Which machine did you allow to access your ELK VM? Jumpbox
 
 What was its IP address?
