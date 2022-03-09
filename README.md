@@ -27,7 +27,7 @@ This document contains the following details:
 - How to Use the Ansible Build
 
 
-### Description of the Topology
+### Description of the Topology:
 
 The purpose of the network is to present a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
@@ -82,7 +82,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
 What is the main advantage of automating configuration with Ansible?
 - Configuration management, single source for application deployment
 
@@ -97,7 +97,7 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 5.  Download and launch docker elk container
 
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance
 
 
 ![Docker-PS](https://github.com/snhb2002/Cybersecurity-Project-1/blob/ed7e939572e7889d8ae9781d9badb1a6c9dd200e/diagrams/docker%20ps.PNG)
