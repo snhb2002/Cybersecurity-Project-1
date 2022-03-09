@@ -60,7 +60,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 ### Access Policies
 
-The machines on the internal network are not exposed to the public Internet. 
+The machines on the internal network are not exposed to the public Internet 
 
 Only the Elk machine can accept connections from the Internet. Access to this machine is allowed only from the following IP addresses:
 - 70.115.247.120
@@ -122,7 +122,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the filebeat file to file-conifg.yml.
 - Update the filebeat.yml file to include...
-- Run the playbook, and navigateto check that the installation worked as expected.  (Screenshot)
+- Run the playbook, and navigateto check that the installation worked as expected  (Screenshot)
 
 ![Kibanaserver png](https://github.com/snhb2002/Cybersecurity-Project-1/blob/4f6d312a4650c2e24eff8b8b306af988bb2c78b7/diagrams/updated%20kibana%20screen.PNG)
 
