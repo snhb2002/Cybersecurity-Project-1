@@ -70,7 +70,7 @@ Machines within the network can be accessed only by Jumpbox via Private-Shared K
 
 What was its IP address?
 -52.165.225.245 (Jumpbox Public)
--10.0.0.4 (Jumpbox Private
+-10.0.0.4 (Jumpbox Private)
 
 A summary of the access policies in place can be found in the table below.
 
