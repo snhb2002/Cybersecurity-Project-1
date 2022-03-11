@@ -2,7 +2,7 @@
 Cybersecurity Project 1
 ## Automated ELK Stack Deployment
 
-These files were used to configure the network below in this repository.
+These files were used to configure the network below in this repository
 
 
 ![Netwrok_Diagram](https://github.com/snhb2002/Cybersecurity-Project-1/blob/f2e27114ed36cc4ba8bc79797a9e0551c8acebe6/diagrams/Network%20Diagram.png)
@@ -31,7 +31,7 @@ This document contains the following details:
 
 The purpose of the network is to present a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing always ensures that the application will be highly available, in addition to restricting access to the network
+Load balancing always ensures that the application will be highly available, in addition to restricting access to the network.
 What is the aspect of security do load balancers protect?
 - The aspect of security that load balancers protect is the system from DDoS attacks by shifting traffic. 
 
@@ -44,7 +44,7 @@ What does Filebeat watch for?
 - Filebeat centralizes and forwards log data. Filebeat monitors the locations or log files and collects log events and forwards them either to Logstash for indexing or Elasticsearch.
 
 What does Metricbeat record?
-- Metricbeat records the statistics and metrics that it collects and ships them to the output that you specify, such as Logstash or Elasticsearch. With Metricbeat, you can monitor your servers by collecting metrics from the system and services running on the server, such as: Apache.
+- Metricbeat records the statistics and metrics that it collects and ships them to the output that you specify, such as Logstash or Elasticsearch. With Metricbeat, you can monitor your servers by collecting metrics from the system and services running on the server, such as Apache.
 
 
 The configuration details of each machine may be found below.
@@ -66,7 +66,7 @@ Only the Elk machine can accept connections from the Internet. Access to this ma
 - 70.115.247.120
 
 Machines within the network can be accessed only by Jumpbox via Private-Shared Key & SSH
-- Which machine did you allow to access your ELK VM? Jumpbox
+- Which machine did you allow to access your ELK VM? The machine that is allowed to access my ELK WM is the Jumpbox.
 
 What was its IP address?
 -52.165.225.245 (Jumpbox Public)
@@ -82,22 +82,22 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually.
 What is the main advantage of automating configuration with Ansible?
-- Configuration management, single source for application deployment
+The main advantage of automating configuration with Ansible is the configuration management.  It is the single source for application deployment.
 
 The playbook implements the following tasks:
 
 In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 
-1.  Check for the presence of docker (Install/Update)
-2.  Check for the presence of python3-pip (Install/Update)
+1.  Look for the presence of docker (Install/Update)
+2.  Look for the presence of python3-pip (Install/Update)
 3.  Install Docker module
 4.  Increase virtual memory
 5.  Download and launch docker elk container
 
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance
+The following displays the result of running `docker ps` after successfully configuring the ELK instance
 
 
 ![Docker-PS](https://github.com/snhb2002/Cybersecurity-Project-1/blob/ed7e939572e7889d8ae9781d9badb1a6c9dd200e/diagrams/docker%20ps.PNG)
@@ -105,34 +105,34 @@ The following screenshot displays the result of running `docker ps` after succes
 
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
+This ELK server is configured to monitor the following 2 machines:
 
 - Web-1 10.0.0.5
 - Web-2 10.0.0.6
 
-We have installed the following Beats on these machines:
+I have installed the following Beats on these machines:
 - Webservers
 
 These Beats allow us to collect the following information from each machine:
 - Machine health, performance, system logs and events etc.  
 
 ### Using the Playbook
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+In order to use the playbook, you will need to have an Ansible control node already configured.  
 
 SSH into the control node and follow the steps below:
 - Copy the filebeat file to file-conifg.yml.
 - Update the filebeat.yml file to include...
-- Run the playbook, and navigateto check that the installation worked as expected  (Screenshot)
+- Run the playbook, and navigate to check that the installation worked as expected  (Screenshot)
 
 ![Kibanaserver png](https://github.com/snhb2002/Cybersecurity-Project-1/blob/4f6d312a4650c2e24eff8b8b306af988bb2c78b7/diagrams/updated%20kibana%20screen.PNG)
 
-: Answer the following questions to fill in the blanks:_
-- Which file is the playbook? Ansible-playbook files   
-- Where do you copy it? Root of ansible 
-- Which file do you update to make Ansible run the playbook on a specific machine? hosts configuration file
+Answer the following questions to fill in the blanks:_
+- Which file is the playbook? The file playbook is the Ansible-playbook files   
+- Where do you copy it? You copy it to the Root of ansible 
+- Which file do you update to make Ansible run the playbook on a specific machine? You use the hosts configuration file to update to make Ansible run te playbook on a specific machine.
 
 How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-- HostName in Host configuration file
+- I specify which maching to install the ELK server on versus which to install Filebeat on by the HostName in Host configuration file
 
 Which URL do you navigate to in order to check that the ELK server is running?
 - SSH azureuser@10.0.0.5 (Web-1)
